@@ -28,3 +28,5 @@ Install React router
 ```
   npm install --save react-router-dom
 ```
+
+Create a new folder "layout" and add a BaseLayout and AuthenticationLayout component.
