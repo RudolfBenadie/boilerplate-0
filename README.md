@@ -30,3 +30,7 @@ Install React router
 ```
 
 Create a new folder "layout" and add a BaseLayout and AuthenticationLayout component.
+
+npm uninstall node-sass
+npm install node-sass@4.14.1
+
