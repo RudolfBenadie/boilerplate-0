@@ -1,0 +1,20 @@
+#navbar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 60px;
+  background-color: black;
+  color: $light-color;
+
+  .spacer {
+    width: 25vw;
+  }
+
+  .content {
+    width: 75vw;
+    text-align: center;
+  }
+
+}

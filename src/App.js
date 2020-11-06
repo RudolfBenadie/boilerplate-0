@@ -1,4 +1,5 @@
-import './App.css';
+import "./App.css";
+import "./assets/scss/main.scss";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import BaseLayout from "./layout/Base";
 import AuthLayout from "./layout/Auth";
@@ -8,12 +9,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div>
-          <Switch>
-            <Route exact path="/" render={props => <BaseLayout currentUser = {currentUser} { ...props } />} />
-            <Route path="/auth" render={props => <AuthLayout currentUser = {currentUser} {...props} />} />
-         </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/" render={props => <BaseLayout currentUser={currentUser} {...props} />} />
+          <Route path="/auth" render={props => <AuthLayout currentUser={currentUser} {...props} />} />
+        </Switch>
       </BrowserRouter>
     </div>
   );
