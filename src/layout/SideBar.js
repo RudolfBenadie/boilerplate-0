@@ -3,7 +3,12 @@ import React from "react";
 const SideBar = (props) => {
   return (
     <div id="sidebar">
-      <h1>Sidebar</h1>
+      <div className="header">
+        <p>Choose an option:</p>
+      </div>
+      <div id="nav">
+        <h3>Dashboard</h3>
+      </div>
     </div>
   )
 }
