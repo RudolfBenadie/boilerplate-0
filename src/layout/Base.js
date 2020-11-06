@@ -9,7 +9,6 @@ const BaseLayout = (props) => {
     <div id="baseContainer">
       <SideBar {...props} />
       <NavBar {...props} />
-      <h1>Base layout</h1>
     </div>
   )
 }
