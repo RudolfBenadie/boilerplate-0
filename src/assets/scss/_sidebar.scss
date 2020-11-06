@@ -1,4 +1,3 @@
-
 #sidebar {
   position: fixed;
   top: 0;
@@ -9,6 +8,18 @@
   z-index: 9999;
   border-right: 1px solid $light-border;
   background-color: $darkbackgroundcolor;
-  color: $primary-color;
-}
+  color: $light-color;
 
+  .header {
+    height: 60px;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: $light-color;
+
+    p {
+      margin: 0 auto;
+    }
+  }
+}
