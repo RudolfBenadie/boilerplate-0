@@ -1,9 +1,11 @@
 const routes = [
   {
-    path: "/dashboard",
+    path: "/auth",
     name: "Dashboard",
     icon: "tachometer-alt",
-    component: Dashboard,
+    component: null,
     layout: ""
   }
-]
+];
+
+export default routes;
