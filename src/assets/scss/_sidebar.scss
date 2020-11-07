@@ -3,7 +3,7 @@
   top: 0;
   height: 100%;
   bottom: 0;
-  width: 25vw;
+  width: $sidebar-width;
   left: 0;
   z-index: 9999;
   border-right: 1px solid $light-border;
@@ -11,7 +11,7 @@
   color: $light-color;
 
   .header {
-    height: 60px;
+    height: $large-navbar-height;
     vertical-align: middle;
     align-items: center;
     display: flex;
@@ -20,6 +20,28 @@
 
     p {
       margin: 0 auto;
+    }
+  }
+
+  .sidebar-wrapper {
+    .nav {
+      text-align: justify;
+      padding-top: 2em;
+
+      .active {
+        font-weight: bold;
+      }
+
+      li {
+        width: 100%;
+
+        a {
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-right: 0;
+          padding-left: 2em;
+        }
+      }
     }
   }
 }
