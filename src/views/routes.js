@@ -12,7 +12,7 @@ const routes = [
   {
     path: "/biography",
     name: "Biography",
-    icon: "tachometer-alt",
+    icon: "user",
     component: Biography,
     layout: "/terminal"
   }
