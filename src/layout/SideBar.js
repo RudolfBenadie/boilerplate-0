@@ -10,7 +10,7 @@ const SideBar = (props) => {
   }
   var sidebar = React.createRef();
   return (
-    <div id="sidebar">
+    <div id="sidebar" className="sidebar">
       <div className="header">
         <p>Choose an option:</p>
       </div>
@@ -27,9 +27,8 @@ const SideBar = (props) => {
                 key={key}
               >
                 <NavLink
-                  to={prop.layout + prop.path}
+                  href={prop.layout + prop.path}
                   className="nav-link"
-                  activeClassName="active"
                 >
                   {/* <i className={prop.icon} /> */}
                   {/* <FontAwesomeIcon icon={prop.icon} /> */}

@@ -4,16 +4,16 @@
   left: 0;
   top: 0;
   right: 0;
-  height: 60px;
+  height: $large-navbar-height;
   background-color: black;
   color: $light-color;
 
   .spacer {
-    width: 25vw;
+    width: $sidebar-width;
   }
 
   .content {
-    width: 75vw;
+    width: $content-width;
     text-align: center;
   }
 

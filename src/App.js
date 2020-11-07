@@ -1,20 +1,22 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css"
 import "./assets/scss/main.scss";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import BaseLayout from "./layout/Base";
 import AuthLayout from "./layout/Auth";
 
 function App() {
   let currentUser = {};
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <Switch>
-          <Route exact path="/" render={props => <BaseLayout currentUser={currentUser} {...props} />} />
+          <Route path="/terminal" render={props => <BaseLayout currentUser={currentUser} {...props} />} />
           <Route path="/auth" render={props => <AuthLayout currentUser={currentUser} {...props} />} />
+          {currentUser ? <Redirect to="/terminal/dashboard" /> : <Redirect to="/uath" />}
         </Switch>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
