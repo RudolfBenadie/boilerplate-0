@@ -1,36 +1,4 @@
-# Initialise project
+# React boilerplate 
 
-Run the following command:
 
-```
-  npx create-react-app boilerplate-0
-```
-
-Open folder boilerplate-0 with VS Code.
-
-Initialise git and publish master.
-
-```
-  git branch dev
-  git checkout dev
-```
-
-Publish dev branch.
-
-Test the react app:
-
-```
-  npm start
-```
-
-Install React router
-
-```
-  npm install --save react-router-dom
-```
-
-Create a new folder "layout" and add a BaseLayout and AuthenticationLayout component.
-
-npm uninstall node-sass
-npm install node-sass@4.14.1
 

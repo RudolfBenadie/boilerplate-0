@@ -27,6 +27,8 @@
     .nav {
       text-align: justify;
       padding-top: 2em;
+      padding-left: 0.5em;
+      color: $light-color;
 
       .active {
         font-weight: bold;
@@ -36,12 +38,31 @@
         width: 100%;
 
         a {
-          padding-top: 0;
-          padding-bottom: 0;
-          padding-right: 0;
-          padding-left: 2em;
+          padding: 0;
+          color: $light-color;
+
+          p {
+            padding-left: 0.25em;
+          }
+
+        }
+
+        a:hover {
+          color: $primary-color
         }
       }
+
+      .nav-link {
+        display: flex;
+
+        .svg-inline--fa {
+          height: 1.5em;
+          vertical-align: 0;
+          width: 1em;
+        }
+
+      }
+
     }
   }
 }

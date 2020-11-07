@@ -3,6 +3,7 @@ import {
   Nav,
   NavLink
 } from "reactstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SideBar = (props) => {
   function activeRoute(routeName) {
@@ -16,7 +17,7 @@ const SideBar = (props) => {
       </div>
 
       <div className="sidebar-wrapper" ref={sidebar}>
-        <Nav>
+        <Nav className="fa-ul" >
           {props.routes.map((prop, key) => {
             return (
               <li
@@ -28,10 +29,10 @@ const SideBar = (props) => {
               >
                 <NavLink
                   href={prop.layout + prop.path}
-                  className="nav-link"
                 >
                   {/* <i className={prop.icon} /> */}
                   {/* <FontAwesomeIcon icon={prop.icon} /> */}
+                  <span class="fa-li"><FontAwesomeIcon icon={prop.icon} /></span>
                   <p>{prop.name}</p>
                 </NavLink>
               </li>
